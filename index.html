@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Mio Portfolio Fotografico</title>
+    <style>
+        /* Reset e Stili Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header / Navigazione */
+        header {
+            background-color: #ffffff;
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1rem;
+            color: #777;
+            font-style: italic;
+        }
+
+        /* Griglia del Portfolio */
+        .portfolio-container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .gallery-item {
+            background-color: #fff;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 300px; /* Altezza fissa per uniformare la griglia */
+            object-fit: cover; /* Ritaglia l'immagine per riempire lo spazio senza distorcerla */
+            display: block;
+            background-color: #e0e0e0;
+        }
+
+        .item-info {
+            padding: 1rem;
+        }
+
+        .item-info h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .item-info p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #333;
+            color: #fff;
+            margin-top: 4rem;
+            font-size: 0.9rem;
+        }
+
+        /* Ottimizzazione per schermi piccoli */
+        @media (max-width: 480px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Intestazione del sito -->
+    <header>
+        <h1>Il Mio Nome / Fotografia</h1>
+        <p>Catturare momenti, raccontare storie</p>
+    </header>
+
+    <!-- Contenitore Principale del Portfolio -->
+    <main class="portfolio-container">
+        <div class="gallery">
+            
+            <!-- Foto 1 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/600x400?text=Foto+In primo+piano" alt="Descrizione della prima foto">
+                <div class="item-info">
+                    <h3>Ritratti Urbani</h3>
+                    <p>Milano, 2026</p>
+                </div>
+            </div>
+
+            <!-- Foto 2 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/600x400?text=Foto+Paesaggio" alt="Descrizione della seconda foto">
+                <div class="item-info">
+                    <h3>Luci al Tramonto</h3>
+                    <p>Natura / Paesaggi</p>
+                </div>
+            </div>
+
+            <!-- Foto 3 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/600x400?text=Foto+Street" alt="Descrizione della terza foto">
+                <div class="item-info">
+                    <h3>Street Photography</h3>
+                    <p>Geometrie e ombre</p>
+                </div>
+            </div>
+
+            <!-- Foto 4 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/600x400?text=Foto+Minimal" alt="Descrizione della quarta foto">
+                <div class="item-info">
+                    <h3>Minimalismo</h3>
+                    <p>Dettagli in bianco e nero</p>
+                </div>
+            </div>
+
+            <!-- Foto 5 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/600x400?text=Foto+Viaggi" alt="Descrizione della quinta foto">
+                <div class="item-info">
+                    <h3>Esplorazioni</h3>
+                    <p>Reportage di viaggio</p>
+                </div>
+            </div>
+
+            <!-- Foto 6 -->
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/600x400?text=Foto+Architettura" alt="Descrizione della sesta foto">
+                <div class="item-info">
+                    <h3>Linee Architettoniche</h3>
+                    <p>Prospettive urbane</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Piè di pagina -->
+    <footer>
+        <p>&copy; 2026 Il Mio Nome Fotografia. Tutti i diritti riservati.</p>
+    </footer>
+
+</body>
+</html>
